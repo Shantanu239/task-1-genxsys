@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MySite</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <h2>Build Modern Websites</h2>
+      <p>Responsive, fast and user-friendly designs.</p>
+      <button id="scrollBtn">Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2>Features</h2>
+      <div class="feature-container">
+        <div class="feature-card">Responsive Design</div>
+        <div class="feature-card">Clean Code</div>
+        <div class="feature-card">Easy to Learn</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2026 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+}
+
+/* Features */
+.features {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .feature-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .hero {
+    padding: 5rem;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
