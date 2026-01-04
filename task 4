@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MySite</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero" id="home">
+      <h2>Build Modern Websites</h2>
+      <p>Responsive, fast and user-friendly designs.</p>
+      <button id="scrollBtn">Get Started</button>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <h2>Features</h2>
+      <div class="feature-container">
+        <div class="feature-card">Responsive Design</div>
+        <div class="feature-card">Clean Code</div>
+        <div class="feature-card">Easy to Learn</div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p>© 2026 MySite. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+gsap.registerPlugin(ScrollTrigger);
+
+/* 1️⃣ Timeline Animation (Hero section) */
+const tl = gsap.timeline();
+
+tl.from(".title", {
+  y: -50,
+  opacity: 0,
+  duration: 1
+})
+.from(".subtitle", {
+  y: 30,
+  opacity: 0,
+  duration: 0.8
+})
+.from(".cta", {
+  scale: 0.5,
+  opacity: 0,
+  duration: 0.6
+});
+
+/* 2️⃣ Hover Animation (Interactive) */
+const button = document.querySelector(".cta");
+
+button.addEventListener("mouseenter", () => {
+  gsap.to(button, { scale: 1.1, duration: 0.2 });
+});
+
+button.addEventListener("mouseleave", () => {
+  gsap.to(button, { scale: 1, duration: 0.2 });
+});
+
+/* 3️⃣ Scroll-based Animation */
+gsap.utils.toArray(".box").forEach(box => {
+  gsap.to(box, {
+    opacity: 1,
+    y: -20,
+    scrollTrigger: {
+      trigger: box,
+      start: "top 80%",
+      toggleActions: "play none none reverse"
+    }
+  });
+});
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background: #111;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  font-size: 2rem;
+  opacity: 0;
+}
+
+.cta {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
